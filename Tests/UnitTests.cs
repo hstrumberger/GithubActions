@@ -90,7 +90,7 @@ public class Divide
     {
         Assert.AreEqual(2, Program.Divide("4", "2"));
         Assert.AreEqual(-5, Program.Divide("-10", "2"));
-        Assert.AreEqual(1, Program.Divide("0", "5"));
+        Assert.AreEqual(0, Program.Divide("0", "5"));
     }
     [TestMethod]
     public void Divide_Invalid_Strumberger()
@@ -115,7 +115,7 @@ public class Power
     public void Power_Valid_Strumberger()
     {
         Assert.AreEqual(8, Program.Power("2", "3")); 
-        Assert.AreEqual(5, Program.Power("5", "0")); 
+        Assert.AreEqual(1, Program.Power("5", "0")); 
         Assert.AreEqual(0.25, Program.Power("2", "-2")); 
     }
     [TestMethod]
